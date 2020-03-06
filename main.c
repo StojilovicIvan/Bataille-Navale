@@ -2,6 +2,7 @@
 
 
 int main() {
+    int i=0;
 
     printf("\nBienvenue a la Bataille Navale");
     printf("\n\nVoici l'aide du jeu:");
@@ -11,8 +12,11 @@ int main() {
            "\nLe but du jeu est de rentrer des coordonnee (par example B4) \net d'essayer de toucher"
            " les bateaux adverses. En tirant le moins de coup possible.");
 
-    printf("\n--------------------------");
-    printf("\n|    |    |    |    |    |");
+    for (int i = 0; i < 10; ++i) {
+        printf("\n---------------------------------------------------");
+        printf("\n|    |    |    |    |    |    |    |    |    |    |");
+    }
+
 
     return 0;
 }
