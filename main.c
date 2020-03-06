@@ -17,6 +17,7 @@ int main() {
         printf("\n|    |    |    |    |    |    |    |    |    |    |");
     }
 
+  printf("\n\nExemple de ligne suplementaire");
 
     return 0;
 }
