@@ -12,6 +12,7 @@ int main() {
 
 
     //initialiser les valeurs au début
+    int choix = 0;
     int i = 0;
     int j = 0;
     int PosH = 0;
@@ -109,7 +110,7 @@ int main() {
                    "\nRaté !"
                    "\n------\n");
             carteJoueur[PosV][PosH] = 1;
-        } else if (carteBateau[PosV][PosH] = !0) {
+        } else if (carteBateau[PosV][PosH] =! 0) {
             printf("\n--------"
                    "\nTouché !"
                    "\n--------\n");
