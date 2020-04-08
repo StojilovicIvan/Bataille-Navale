@@ -22,6 +22,7 @@ int main() {
     int j =0;
     int PosV =0;
     int PosH =0;
+    int voider =0;
     int retourMenu= 0;
     int fichierScore = 0;
     char nomJoueur[20] = {0};
@@ -162,10 +163,14 @@ int main() {
                     do {
                         //demande d'entré les position choisit
                         printf("\n\nEntrer la position de tir");
-                        printf("\n\nPosition Horizontal:");
-                        scanf("%d", &PosH);
-                        printf("\nPosition Vertical:");
-                        scanf("%d", &PosV);
+                        do {
+                            printf("\n\nPosition Horizontal:");
+                            scanf("%d", &PosH);
+                        }while((PosH < 1) || (PosH > 10));
+                        do {
+                            printf("\nPosition Vertical:");
+                            scanf("%d", &PosV);
+                        }while((PosV < 1) || (PosV > 10));
                         PosH -= 1;
                         PosV -= 1;
                         if (carteJoueur[PosV][PosH] > 0) {
